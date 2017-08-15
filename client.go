@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dchote/gumble/gumble"
-	"github.com/dchote/gumble/gumbleopenal"
-	"github.com/dchote/gumble/gumbleutil"
+	"github.com/dkunzler/gumble/gumble"
+	"github.com/dkunzler/gumble/gumbleopenal"
+	"github.com/dkunzler/gumble/gumbleutil"
 	"github.com/kennygrant/sanitize"
 )
 

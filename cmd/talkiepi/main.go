@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dchote/gumble/gumble"
-	_ "github.com/dchote/gumble/opus"
+	"github.com/dkunzler/gumble/gumble"
+	_ "github.com/dkunzler/gumble/opus"
 	"github.com/dkunzler/talkiepi"
 )
 
