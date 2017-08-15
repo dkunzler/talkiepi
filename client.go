@@ -177,7 +177,7 @@ func (b *Talkiepi) ParticipantLEDUpdate() {
 }
 
 func (b *Talkiepi) OnTextMessage(e *gumble.TextMessageEvent) {
-	fmt.Printf("Message from %s: %s\n", e.Sender.Name, strings.TrimSpace(esc(e.Message)))
+	fmt.Printf("Message from %s: %s\n", e.Sender, strings.TrimSpace(esc(e.Message)))
 }
 
 func (b *Talkiepi) OnUserChange(e *gumble.UserChangeEvent) {
