@@ -17,9 +17,10 @@ func (b *Talkiepi) Init() {
 	b.Config.Attach(gumbleutil.AutoBitrate)
 	b.Config.Attach(b)
 
-	b.initGPIO()
+	//b.initGPIO()
 
 	b.Connect()
+	b.TransmitStart()
 
 	// our main run loop here... keep things alive
 	keepAlive := make(chan bool)
