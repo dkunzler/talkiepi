@@ -20,8 +20,7 @@ func (b *Talkiepi) Init() {
 	//b.initGPIO()
 
 	b.Connect()
-	b.TransmitStart()
-
+	
 	// our main run loop here... keep things alive
 	keepAlive := make(chan bool)
 	exitStatus := 0
@@ -125,6 +124,8 @@ func (b *Talkiepi) OnConnect(e *gumble.ConnectEvent) {
 	if b.ChannelName != "" {
 		b.ChangeChannel(b.ChannelName)
 	}
+	
+	b.TransmitStart()
 }
 
 func (b *Talkiepi) OnDisconnect(e *gumble.DisconnectEvent) {
